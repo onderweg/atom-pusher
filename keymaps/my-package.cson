@@ -9,4 +9,4 @@
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
   'ctrl-alt-p': 'atom-pusher:test_message'
-  'ctrl-alt-r': 'atom-pusher:replay-last-messag'
+  'ctrl-alt-r': 'atom-pusher:replay-last-message'

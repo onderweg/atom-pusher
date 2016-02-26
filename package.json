@@ -2,7 +2,7 @@
   "name": "atom-pusher",
   "main": "./lib/main",
   "version": "0.3.0",
-  "description": "Recieve Pusher notifications in Atom",
+  "description": "Receive Pusher notifications in Atom",
   "keywords": [],
   "activationCommands": {},
   "repository": "https://github.com/onderweg/atom-pusher",
