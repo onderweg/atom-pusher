@@ -2,7 +2,7 @@
 
 This is an experimental package that shows notifications sent via [Pusher](http://pusher.com) in Atom.
 
-![Color Picker in action](resources/screenshot.png)
+![Screenshot](resources/screenshot.png)
 
 Atom Pusher listens to the Pusher channel defined in the config, and shows
 a notification whenever a message is received. Messages should have the
