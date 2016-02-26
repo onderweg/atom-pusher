@@ -1,0 +1,23 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Atom Pusher'
+      'submenu': [
+        {
+          'label': 'Show test message'
+          'command': 'atom-pusher:show-test-message'
+        },
+        {
+          'label': 'Replay last message'
+          'command': 'atom-pusher:replay-last-message'
+        }
+      ]
+    ]
+  }
+]
