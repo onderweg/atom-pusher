@@ -28,8 +28,10 @@ module.exports = AtomPusher =
       atom.config.get('atom-pusher.pusherChannel')
     );
 
-    # Start listening to events
-    @pusher.listen()
+    # Start listening to events; in timeout to reduce startup time
+    setTimeout ( =>
+      @pusher.listen()
+    ), 0
 
   deactivate: ->
     @subscriptions.dispose()
