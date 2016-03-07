@@ -11,7 +11,8 @@ following format:
 ```json
 {
   "title": "message title",
-  "detail": "message text"
+  "detail": "detail text",
+  "description": "description text"
 }
 ```
 

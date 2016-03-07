@@ -1,4 +1,5 @@
 {CompositeDisposable} = require 'atom'
+ipc = require("ipc")
 Pusher = require './pusher.js'
 
 module.exports = AtomPusher =
@@ -6,7 +7,7 @@ module.exports = AtomPusher =
   config:
     pusherKey:
       type: 'string'
-      description: 'Pusher key'
+      description: 'Your Pusher application key'
       default: 'my-key'
     pusherChannel:
       type: 'string'
@@ -43,7 +44,10 @@ module.exports = AtomPusher =
   notify: ->
 
     @pusher.push({
-        title: 'Test message from Atom Pusher'
+        title: 'Test message from Atom Pusher',
+        detail: 'Message detail',
+        description: 'Message description'
+        link: 'https://www.atom.io'
     });
 
     console.info('Message pushed');
