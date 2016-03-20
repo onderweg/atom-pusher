@@ -16,6 +16,10 @@
         {
           'label': 'Replay last message'
           'command': 'atom-pusher:replay-last-message'
+        },
+        {
+          'label': 'Reconnect to Pusher'
+          'command': 'atom-pusher:reconnect'
         }
       ]
     ]

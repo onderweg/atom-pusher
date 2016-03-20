@@ -22,6 +22,7 @@ module.exports = AtomPusher =
     # Register commands
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-pusher:show-test-message': => @notify()
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-pusher:replay-last-message': => @replay()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-pusher:reconnect': => @reconnect()
 
     # Create Pusher client
     @pusher = new Pusher(
@@ -35,11 +36,14 @@ module.exports = AtomPusher =
     ), 0
 
   deactivate: ->
+    @pusher.dispose()
     @subscriptions.dispose()
 
   replay: ->
-
     @pusher.replay()
+
+  reconnect: ->
+    @pusher.reconnect()
 
   notify: ->
 
