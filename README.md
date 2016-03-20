@@ -17,6 +17,3 @@ following format:
   "description": "description text"
 }
 ```
-
-If the message object contains an ID property, its value is used
-coalescing notifications in Growl.
